@@ -1,6 +1,6 @@
 ///
 //  Generated code. Do not modify.
-//  source: messages.proto
+//  source: rpc.proto
 //
 // @dart = 2.12
 // ignore_for_file: annotate_overrides,camel_case_types,unnecessary_const,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type,unnecessary_this,prefer_final_fields,deprecated_member_use_from_same_package
@@ -781,16 +781,30 @@ const LNURLAuth$json = const {
 
 /// Descriptor for `LNURLAuth`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List lNURLAuthDescriptor = $convert.base64Decode('CglMTlVSTEF1dGgSEAoDdGFnGAEgASgJUgN0YWcSDgoCazEYAiABKAlSAmsxEhoKCGNhbGxiYWNrGAMgASgJUghjYWxsYmFjaxISCgRob3N0GAQgASgJUgRob3N0EhAKA2p3dBgFIAEoCFIDand0');
+@$core.Deprecated('Use lNUrlPayImageDescriptor instead')
+const LNUrlPayImage$json = const {
+  '1': 'LNUrlPayImage',
+  '2': const [
+    const {'1': 'data_uri', '3': 1, '4': 1, '5': 9, '10': 'dataUri'},
+    const {'1': 'ext', '3': 2, '4': 1, '5': 9, '10': 'ext'},
+    const {'1': 'bytes', '3': 3, '4': 1, '5': 12, '10': 'bytes'},
+  ],
+};
+
+/// Descriptor for `LNUrlPayImage`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List lNUrlPayImageDescriptor = $convert.base64Decode('Cg1MTlVybFBheUltYWdlEhkKCGRhdGFfdXJpGAEgASgJUgdkYXRhVXJpEhAKA2V4dBgCIAEoCVIDZXh0EhQKBWJ5dGVzGAMgASgMUgVieXRlcw==');
 @$core.Deprecated('Use lNUrlPayMetadataDescriptor instead')
 const LNUrlPayMetadata$json = const {
   '1': 'LNUrlPayMetadata',
   '2': const [
-    const {'1': 'entry', '3': 1, '4': 3, '5': 9, '10': 'entry'},
+    const {'1': 'description', '3': 1, '4': 1, '5': 9, '10': 'description'},
+    const {'1': 'long_description', '3': 2, '4': 1, '5': 9, '10': 'longDescription'},
+    const {'1': 'image', '3': 3, '4': 1, '5': 11, '6': '.data.LNUrlPayImage', '10': 'image'},
   ],
 };
 
 /// Descriptor for `LNUrlPayMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List lNUrlPayMetadataDescriptor = $convert.base64Decode('ChBMTlVybFBheU1ldGFkYXRhEhQKBWVudHJ5GAEgAygJUgVlbnRyeQ==');
+final $typed_data.Uint8List lNUrlPayMetadataDescriptor = $convert.base64Decode('ChBMTlVybFBheU1ldGFkYXRhEiAKC2Rlc2NyaXB0aW9uGAEgASgJUgtkZXNjcmlwdGlvbhIpChBsb25nX2Rlc2NyaXB0aW9uGAIgASgJUg9sb25nRGVzY3JpcHRpb24SKQoFaW1hZ2UYAyABKAsyEy5kYXRhLkxOVXJsUGF5SW1hZ2VSBWltYWdl');
 @$core.Deprecated('Use lNURLPayResponse1Descriptor instead')
 const LNURLPayResponse1$json = const {
   '1': 'LNURLPayResponse1',
